@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+        background-color:black;
+    }
+    h2{
+        padding-top: 5%;
+        text-align: center;
+        color:black;
+    }
+    h1{
+        padding-top: 5%;
+        padding-left: 7%;
+        color:bisque;
+    }
+    nav{
+        display: flex;
+        margin: auto;
+        color:black;
+        width: 84%;
+        align-items: center;
+        padding: 20px 0%;
+        justify-content:space-between ;
+        text-align: right;
+        position: relative;
+        opacity: 1;
+    }
+    nav,ul,li{
+        display: inline;
+        list-style: none;
+        margin: 10px 20px;
+        text-align: right;
+        position: relative; 
+        opacity: 1;
+
+    }
+    nav,ul,li,a{
+        text-decoration: none;
+        color:black;
+        font-weight: bold;
+        text-align: right;
+        position: relative;
+        opacity: 1;
+    }
+    h3{
+        padding-left: 7%;
+        color:bisque;
+    }
+    .box{
+        text-align: center;
+        padding-top: 0%;
+        position: absolute;
+        width: 100%;
+        height: 200px;
+       background-color:bisque;
+       animation: boxani 1s;
+       z-index:5
+      
+    }
+    @keyframes boxani{
+        from{
+            width: 0%;
+            height: 200px;
+        }
+        
+        to{
+            width: 100%;
+        height: 200px;
+
+        }
+    }
+    .navi{
+        text-align: right;
+        font-size: medium;
+        width: 100%;
+        height: 100%;
+        position:relative;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        color:black;
+        z-index:10;
+
+    }
+    .n1:hover{
+        animation-name: a;
+        animation-duration: 1s;
+        font-size: 100%;
+    }
+    @keyframes a{
+        0%{
+            font-size: medium;
+        }
+        50%{
+            font-size:larger;
+        }
+        100%{
+            font-size:medium;
+        }
+    }
+    .n2:hover{
+        animation-name: a2;
+        animation-duration: 1s;
+        font-size: 100%;
+    }
+    @keyframes a2{
+        0%{
+            font-size: medium;
+        }
+        50%{
+            font-size:larger;
+        }
+        100%{
+            font-size:medium;
+        }
+    }
+    .n3:hover{
+        animation-name: a3;
+        animation-duration: 1s;
+        font-size: 100%;
+    }
+    @keyframes a3{
+        0%{
+            font-size: medium;
+        }
+        50%{
+            font-size:larger;
+        }
+        100%{
+            font-size:medium;
+        }
+    }
+    .n4:hover{
+        animation-name: a4;
+        animation-duration: 1s;
+        font-size: 100%;
+    }
+    @keyframes a4{
+        0%{
+            font-size: medium;
+        }
+        50%{
+            font-size:larger;
+        }
+        100%{
+            font-size:medium;
+        }
+    }
+    .n5:hover{
+        animation-name: a5;
+        animation-duration: 1s;
+        font-size: 100%;
+    }
+    @keyframes a5{
+        0%{
+            font-size: medium;
+        }
+        50%{
+            font-size:larger;
+        }
+        100%{
+            font-size:medium;
+        }
+    }
+
+    .heading{
+        font-size: x-large;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        color:black;
+        z-index:10;
+    }
+    .para{
+        font-size: large;
+        position: absolute;
+        padding-left: 7.5%;
+        float: left;
+        color:bisque;
+
+    }
+    .img{
+        height: 300px;
+        width: 300px;
+        padding-top: -100;
+        padding-right: 10%;
+       float:right;
+       position: relative;
+       animation: img 1s;
+    }
+    @keyframes img{
+        from{
+            height: 100px;
+        width: 100px;
+        padding-right: 0%;
+      
+       position: relative;
+
+        }
+        to{
+            height: 300px;
+        width: 300px;
+        padding-right: 10%;
+       float:right;
+       position: relative;
+        }
+    }
+
+  
+</style>
+<body>
+    <div class="container">
+        <div  class="box"></div>
+       <div class="heading"> <h2><b>PORTFOLIO</b></h2> </div>
+       <div class="navi"><nav><ul>
+        <li><a class="n1" href="portfolio.html">Home</a></li>
+        <li><a class="n2" href="about_page.html">About Me</a></li>
+        <li><a class="n3" href="portfolio2.html">Projects</a></li>
+        <li><a class="n4" href="contact.html">Coding Platforms</a></li>
+        <li><a class="n5" href="contact2.html">Contact</a></li>
+       </ul></nav></div>
+
+
+    </div>
+    
+<div class="writings">    <div class="content"><h1>Sri Sudhi N</h1><h3><b>Engineering Student</b></h3>
+<div class="img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISERASExAQFRISEA8QEBAVEBMQERIQGRIWHRURExcYHi4gGholHRgWITEiJSkrLjAuFx8/ODMsNygtLisBCgoKDg0OGxAQGislHyYtLy0tKy0tLS8tLS0tLS4tLS0tLS0tKy0tLS0tLS0uLS0tKy0tLS0tKy8tLTUtLjc1OP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABAYFBwEDCAL/xABCEAACAQICBgQMBAUCBwAAAAAAAQIDEQQhBQYSMUFRB2FxgRMUIiMyQlJicpGhsYKiwdEzksLw8dLhJDVDU3Oys//EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/xAAkEQEBAAICAgIBBQEAAAAAAAAAAQIRAzEEEiFBEwUiMlGxYf/aAAwDAQACEQMRAD8A3iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXOqWIiuPyzGzTtBFeNXBP7Hz477v1/2I+0S9KmAh+O+79T6WNXFP7j2h6VKB0xxMXxt25HamS25ZpyAA4AAAAAAAAAAAAAAAAAAAAAAB018Qo9b5fuct07Jt2yklm2RKuM9ld7I1So5ZtnyQuf8AS2cc+31Oo3vbZ8gEEwAB0AAA5jJrc2jgBxKpYx+sr9a3kuFRPczFHMJNO6ZKZoXCXplgR8PiU8nk/oyQWS7VWaAAdcAAAAAAAAAAAAAAA6cTW2V1vd+5y3Tsm3xicRbJb/sQWw2Cq3a/HHQADiQDE6x6xYfA0vCV52vdU6cfKqVJezCPHhm7JXzaNOay9JWMxLlGlJ4ajmlGnLzsl79Xevw27yzDiyz6Qyzkbs0lpfD4dXr4ihSvu8JVhTb7E3d9xgsR0i6Lhk8Yn8FGtUXzjBnnyTu3JtuTd5SbvJvm295wXzxp91X+WvQuG6RNFzyWMivjpVqf1lBGd0dpXD4hXoYijVXHwdWFS3bsvI8unMG01JNqSzjJO0k+aazQvjT6p+WvVoNBav8ASRjsNaM5+MUl6lZtzt7tX0k/i2uw25qrrhhcfHzUnGqleeHnZVIri1wlHrXfYoz4ssVmOcqwgArTCZhcTwfc/wBGQwdl0jZtlwRsJXvk96+qJJbLtRZoAB1wAAAAAAAAAAHE5WTb4GLqT2m2yTjqm6Pe/wBCIV536Xcc+NgAILAwWuGs1PR+HdWa2pyvGhRvZ1KlufCK3t8ubaTzNetGEZTnJRhCMpzk8lGKV3J9x5x1x1inj8VOs7qmrww9N+pRTyy9p+k+t8ki3i4/e/8AEM8tRA0xpWtiq069ebnUlx3RjHhCC9WK4L7ttkIA3dM4ADrgAAB2YevKnOM4SlGcJKUJxbjKMlxTW46wBvHo619WMSw+IcY4qK8mWUY4iKWbS4TXGPHeuKV9PKlGrKEozhJxnGSlCadpRkndST5pnoXUDWlaQwylKyr0rQxEFl5VvJqRXsys31NSXAx83F6/M6X4Z7+KswAM61zGVndcDJ0qm0k/7uYskYKpZ24P7ksbqq85uJ4ALVIAAAAAAAAGDqxUrRfy+YrsY+pO7b5nyAUNAAA6110z6cdLDU8LB2liW5VLb1Qg1dfilsrrUZGlizdJGlPGNJYmSd40peLU/hp3Uvz7b7ysnocWPrjGbO7oS9F4F161KjHfUnGN+UfWl3JN9xENgdFuiLupipLJXo0et/8AUmvpH+Yjz8n48LknwcX5OSYsNrtqy8JU8JTT8XqPyXm/Bz/7cny5Pu4Z1g3/AIvDQqwlTqRUoTWzKL3NGotbdVp4OW1G88PJ2jU4wb3QqdfBPc+3IzeJ5Uznpl3/AK1eZ4l4774df4roAN7zwAACwajawvA4ynVbfgpeaxC4eCk1eXbF2l3NcSvg5Zuarsunq5MFT6MNLeM6OoXd50L4aed35FthvrcHBlsPNymrpql3NgTAOOsrCV0nzVz6I+Cl5NuTJBdLuM1mqAA64AAAAABFx7yS6yUQ9Ier3/oRy6Sw7RAAVNAdGOxKpUqtV7qdOdR9kYtv7HeV/pBq7OjMe+eHnT/ntH+o7jN3Tl+I85OcpXlJ3lJuUnzk82/mcAyer+hp4usqMJRj5Mpym02oxVs7Le7tK3WejllMZu9M2ONyup26tDaLqYqtCjT3yzlLhCHrTfUvq7Libu0fg4UaVOlBWhTioxXHtfW977SDq7q/RwcHGmm5Ss6lWXpza3diXBL7tsyx4vl+T+W6nUe74fjfhx3e6HzVpxlFxlFSjJNSi0nFp70096PoGRsa71k6P3d1MJms28PKVmv/ABSf2l8+BWp6t1pU3Up05uVPycRh3FqvSml6Si85wlvTWe9Z2bN0nFs78d1+NuRtw87kxmr8sPJ+n8eV3Ph59fFcU7NcU+TODemktB4bEfxaFObtbbtszt8cbS+pVtPagUFRqSw/hI1IRlOMXNzjOyvsPazV+DvvNnH5/Hl8WaYuT9P5Md2WVrQBMG557avQXjHtY2jwtRrRXX5UZv8A9PkbZNH9CtRrSNRcJYKtddaq0Wv1+ZvAw88/e0cf8QAFKxKwDzkupMmkDAvyu5/dE8tw6UZ9gAJIAAAAAAQ9Ier3/oTCLj1kn1kcuksO0IAFTQFW6UP+VYz4aP8A96ZaSu9IdLa0ZjlyoSqfyNS/pJYfyiOXTzmWfo5xip46Kk7KrTnRT95uMo/PYt2tFYOYyaaabTTTTTs008mnzN/Jh743H+1PHn6ZzL+noMFT1I1seLvRqxtWhDb21bZqRTScrcJXaut3ZuVsPnuTjy48vXJ9JxcuPJj7YgAILAAADH6wY+NDDV6rt5NOWyuc2rQj3yaRKxuJjSp1KsvRpwnUlbfsxTbt15Goda9aZ42SSi4UYO8Kd7ty9ub524cLvfvNPjePeXLf1O2TyvIx4sdfd6V+KskgAe8+eX3oVhfSNR8I4Ktn21aCRvE1H0F4V+ExtW2ShQpJ9blOUl+WJtww89/e0cf8QAFKxIwPpdz+6J5CwCzb6kTS3DpRn2AAkgAAAAAB04uN4vqzO44aFdl0xIOZxs2uRwUNAR9IYVVqVWk91WlUpPslFr9SQAPKThKLcZK0otxlHipLJr5nBaekzRPi2kcQkrQrNYmny85fb/Op/Qqx6eN3NstmqymrWlPFcTSrO+ym41Es26cspZcbb7c4o3dTmpJSi04yScWndNPc0+R59LTqrrlUwiVKadShfKN/OU/gbya919zRi8zxryfux7b/AAvKnF+3LqttggaJ0zQxMdqjVjK3pR3Tj8UXmieePljcbqvaxymU3KA4k7K7yS3vckU/WHX2jSThh7Vqma21/Bi+bl6/ZHLrRLj4s+S6xiHLzYcc3lTpK0uqeH8Xi/OV2rrjGineTfa0o98uRqw78bjKlapKpUm5zk7yk/suS6kdB7vj8P4sPV4Hkc35s/YAOYwbajFXlJqMY8XJuyS7WXs7efQ5gPB6O8I1Z4ivVq/hjaEe7yG+8vRD0NgFh8PQoLdRo06V+bjFJy73d95MPNzu8rWrGagACKSdgY+S3zZJPmlGyS5I+i6TUZrd0AB1wAAAAAAABCx1PNS55PtIplakLprmYucbNp8CrOLsLuacAAisa96ZdBOthYYmCvPCt7dt7w87bT/C1F9S2jSZ6sqU1JOMknGScZRaunFqzTXKx56181Sno+u0lJ4ao28PU32W/wADN+3Hr3pX521+Pn8etUcmP2rABN0donEV/wCDRqT95RtBds35K+Zotkm6rktuos3RtgnUliWpWcY0LPtdT5bi+xoYmOSqRfa7/dGL1E1dqYSnVdVx8JVcLxi9pQjG9k3xflPdluLQeH5XLMuW6+Y+g8TjuHDJl8VhcTo2rOMtuovRllm+HLJGlIPJdiPQpprWDVXEYepNRo1J0dpunUhFzWxfJStmmlk78jT4HLN3Gsv6jx2+uUjAAf2weo8gLd0W6G8Z0hSbV6eG/wCJqZZbUX5qPbt2fZBlWwuHnVnCnThKdSclGEIq8pS5I9Cag6rrR+G2HZ16jVTETWa2rZU4v2YrLrbb4lPNn64p4Y7qygAwtId+Dp3lfgs+/gdCRk6FPZVvn2ksZuoZ3UdgALVAAAAAAAAAAABHxdG6ut6+qJAOWbdl0xAJmKw/rLvX6ohlVml8u3xVqxjFyk1GKV3JuySKlp/WLD1qc6Lw6rU5ZS8J5MHykl6V0808mmQdadLutUdOL81TbS5Tmt8n9l/uYMlIuxwn2xuG0Dh6buqSbvdbbdS3K21/kytGtKHoya7N3yPgErfbtZjJj0ydLTM16UYy/K/2JEdNx4wl3NMwgKbwcd+l05859s1LTceEH3tIj1dM1H6KjH8z+v7GNAnBhPovPnft1Y3DQrO9WEZv2pRTfc96MRX1Vw8nl4SGeajO+XG22nYzgL5lZ0z5YY5dxadQ9H6PoJrD03Gu1ac6rU60lx2ZbtnLdFLdmi4mp4TcWmm00001k0+DRsXV/SfjFFSdtuL2ai972l1NZ/Mry32ryw9emTAJOFw983u4Lmck2hbp94Oj6z7v3JYBbJpnt3QAHXAAAAAAAAAAAAAAIGlMLKVOo6VvCOEti7snOztnwzJ4OWbdl00nicNOnJwnGUZR3xas/wDHWdRuPSmiaOIjs1YJ29GW6cfhlwKNpfUitTvKi/Cw9nKNRL7S7rdhzTXhzS9qqD7rUpQk4yjKMlvjJOMl2pnwFwAAAAAAHMIttJJtvJJK7b5JAcFi1HrtV5Q4VKby96Luvo5H1onU3EVbOa8DDnJXm11Q4d9i9aG0DQwy83G8mrSqSzm+/gupDW1PJy4yaSMPheMvl+5LAOyaZLbQAHXAAAAAAAAAAAAAAAAAAAAABHxeCp1Vs1KcJrgpRUrdl9xgMZqPhZ5w8JTfuy2o/KV/uWcBKZWdVQq/R/P1MRF9Uqbj9U2Q5aiYrhPDv8c1/QbJBzSc5s2to6iYr2sOvxz/ANBKodH9R+niKa+GEp/dov4Gj82aq4TUTDxznKrU6rqEfy5/Uz+B0bRoq1KlCHNqK2n2ve+8lg6hc8r3QABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z">    </div>
+    <div class="para"><p><i><b>Aspiring engineering student currently pursuing degree in <span>B.E Electronics and Communication.</span> <br>
+        I am an enthusiastic learner, always willing to learn new skills and keep expanding my knowledge of <br>different languages and systems.</b></i></p></div>
+    </div>
+</div>
+    
+</body>
+</html>
