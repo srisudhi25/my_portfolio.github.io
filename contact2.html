@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            display:inline-flex;
+            margin: 0;
+            background-color:black;
+        }
+        h2{
+            font-size:300%;
+            margin-top:0%;
+            text-align: left;
+            padding-top: 4%;
+            padding-left: 3%;
+            color:black;
+        }
+        
+        nav{
+            display: flex;
+            margin: auto;
+            color:black;
+            width: 84%;
+            align-items: center;
+            padding: 20px 0%;
+            
+            text-align: left;
+            position: relative;
+            opacity: 1;
+        }
+        nav,ul,li{
+            align-items: center;
+            display: inline;
+            list-style: none;
+            margin: 10px 20px;
+            text-align: left;
+            position: relative; 
+            opacity: 1;
+    
+        }
+        nav,ul,li,a{
+            align-items: center;
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+            text-align: left;
+            position: relative;
+            opacity: 1;
+        }
+       
+        .box{
+            margin-top: 0%;
+            margin-left: 0%;
+            text-align:left;
+            padding-top: 0%;
+            position: absolute;
+           
+            width: 300px;
+            height: 100%;
+           background-color:#F0944F;
+           animation: boxani 1s;
+           z-index:5
+          
+        }
+        @keyframes boxani{
+            from{
+                width:300px;
+                height: 0%;
+            }
+            
+            to{
+                width: 300px;
+            height: 100%;
+    
+            }
+        }
+        .navi{
+            text-align:left;
+            margin-top: -50;
+            font-size: medium;
+            width: 100%;
+            height: 100%;
+            position:relative;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            color:black;
+            z-index:10;
+            padding-top: 0;
+            padding-left: 4%;
+    
+        }
+    
+        .heading{
+            color:black;
+            font-size: large;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin-top: 25;
+            margin-left: 30;
+            padding-left: 30;
+            opacity: 1;
+          
+            z-index:10;
+        }
+        .navilink{
+            font-size: larger;
+           color:bisque;
+            padding-top: 5%;
+            padding-left: 0%;
+        }
+        .n1,.n2,.n3{
+            text-align: center;
+            align-items: center;
+            color:burlywood;
+            width: 100%;
+        }
+        #c1,#c2,#c3{
+            color:bisque;
+        }
+        .navi2link{
+            
+            font-size: larger;
+           color:bisque;
+            padding-top: 5%;
+            padding-left: 20%;
+        }
+        .nn1,.nn2{
+            text-align: center;
+            align-items: center;
+            color:burlywood;
+            width: 100%;
+        }
+        .nn3{
+            text-align: left;
+            color:burlywood;
+            width: 100%;
+        }
+        #cc1,#cc2,#cc3{
+            color:bisque;
+        }
+        #img{
+            width: 2.5%;
+            height: 2.5%;
+        }
+       
+
+    </style>
+    <body>
+        <div class="container">
+            <div  class="box"></div>
+           <div class="heading"> <h2><b>Contact</b></h2> </div>
+           <div class="navi"><nav><ul><br>
+           <li><a href="portfolio.html">Home</a></li><br><br>
+            <li><a href="about_page.html">About Me</a></li><br><br>
+            <li><a href="portfolio2.html">Projects</a></li><br><br>
+            <li><a href="contact.html">Coding Platforms</a></li><br><br>
+            <li><a href="contact2.html">Contact</a></li>
+           </ul></nav></div>
+    
+    
+        </div>
+        
+       
+
+            <div class="navi2link"><nav><ul>
+                <br><br><br><li><div id="cc1"><img id="img" src="data:image/png;base64,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"> LinkedIn</div><br><a class="nn1" href="https://www.linkedin.com/in/sri-sudhi-nagaraj-712808242">• https://www.linkedin.com/in/sri-sudhi-nagaraj-712808242</a></li><br><br>
+                 <li><div id="cc2"><img id="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEUAAAD///+MjIzx8fHR0dHs7Oz19fW1tbWPj49WVlYTExODg4PW1tZ3d3fm5ua6urrc3NzAwMCcnJwYGBgnJydxcXE6Ojo1NTVFRUXGxsYuLi6rq6sfHx9paWlQUFA/Pz9eXl5u3bBQAAAEGElEQVR4nO2b2baqMAxAW+ahIIIDigP//5X3gIIIiVYtDXet7lc9uDmlaZIWxhcIoxaAMFKyGClZjJQsRkoWIyWLkZLFSMlipGT5P6TszPHzwNJEkPtOZr+RcqywYJopQsvBpWx/o1uoY+PbsNThQqXUcDkAUvaWUqlha4+l3Cu1E2NX91nKiaiNGiJnKJWeqH1unNKHlHuktuk4ur1UTe3yoO6kcmqTIflNKt1TiwzZp61UTO3xTNxIedQWY7w/qUU9UQ05Z15NLTGm9limPVV5R5ExQZauYGwE425CbfFM4rbB09lRizzYOd0y4y1mBubeIHVJz9Q6Ded0lHmuyBeb/Wqao3sBaXAoAg+sZpyazqkeVlnPdR/VGD5GDpDiLknKELv8lRTnWahbKczGDtMGh1fpdaq8iQLUdfE0jmE8VcJaQQdN5c3xAP48yyeNmJZcQ/KwycGftv8WvVKAH6WzP/BhCv6wKNtPt/Cnh1nbC1d45NK+z3KswC+4wXxOgQv+ZDV8mEvYO5upP7SdhKbb2JSj74Fzk/M5mnsbH/wpKBJFyFct1U4WcvtwN6qG/6lCadvxAk/2rEb/IoCDVqVsDDfwlLJfTqnjGvwjV9EDv4Xn3PrdAnJGJoaCMbwgU1yiPjgF4IPo5T+2IE85fN1A7rpXeAx/C1pIaFrLLxvYFcbBTZpSyX3Cs8T7cuGBnwj+cTq5d8DrfJM8IOmA802VksBBa/3pdeCRs7/sq5yQSGd9sD0RWUg8/n4u1/CaIB+0kND0Y9k7Lsm6G5V6HvZInvZzYbJbgRdOJSYzktGuVLTDLnDQct4ErRKevpminKOAq47XrTZ4UeG5utZOhCQP6LROkHRA7bYilnSAN14g96C+XYhVrZObj/AaUz1IzBGjhSf8NbZ9SALPQ38wx3dw+ZHN2KzHUuw+GsZzJ/kgO6QYacdw2v5qEbNvHkQJ+MOez5gPh6ZEx/GCAlnRkFVSVyMcSR6gkas1KTUgTZPxP2/Gtg3EHg7aT6z1d+WRqrVHpsZUT4TUKC1eQHWkB6la+Uc1pnrOYHJJvXsIpQTTxEE74zbvvE1laYYVD802GEh113I1bza95hr4juMHyxg5g8FgMBgMSqDPEidEbHHHPNmfkvaTSe8J2XLS156Y+dQKU3wmqBWmCGaTvuwEcbHZ0t4maN4nYDyllhiTNsffamqLZ+r2TJ5Y1Nn9QtwOCio/9/MLFr+fXvz6uIF6St5JicWsypHopbhDLdNx2029Hz5dUdvcuO9XdydixQJe8Tt2ewb9Md20pnaq+/7p4OywTzoJy8FG4fBAs1uRzcKoGu6rjE5ZH+JQu1gUxqNeLvDCvdD7wr14+8L9MjBSshgpWYyULEZKFiMli5GSxUjJYqRkMVKy/AP8Oj+R+sOg7AAAAABJRU5ErkJggg=="> Mail Id</div><br><a class="nn2"  href="srisudhi.n2022ece@sece.ac.in">• srisudhi.n2022ece@sece.ac.in   </a></li><br><br>
+                 <li><div id="cc3"><img id="img" src="data:image/png;base64,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"> Contact no</div><br><div class="nn3">• 7708619542</div></li>
+                 
+                </ul></nav></div>
+                
+        
+    </body>
+</html>
